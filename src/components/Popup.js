@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { checkWin } from "../helpers/helpers";
+import { checkWin } from "../helpers/Helpers";
 
 const Popup = ({ correctLetters, wrongLetters, selectedWord, setPlayable, playAgain }) => {
   let finalMessage = "";
