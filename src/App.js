@@ -6,10 +6,56 @@ import Word from "./components/Word";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
 import { showNotification as show } from "./helpers/Helpers";
-
+import Swal from "sweetalert2";
 import "./App.css";
 
-const words = ["application", "programming", "interface", "wizard"];
+const words = [
+  "abjad",
+  "akhirat",
+  "aksesori",
+  "aktif",
+  "akuarium",
+  "aluminium",
+  "ambulans",
+  "analisis",
+  "antena",
+  "antre",
+  "anugerah",
+  "azan",
+  "afdal",
+  "agamais",
+  "ajek",
+  "adjektif",
+  "aktual",
+  "balsam",
+  "batalion",
+  "baterai",
+  "barzakh",
+  "bazar",
+  "besok",
+  "bosan",
+  "bus",
+  "cabai",
+  "capai",
+  "cedera",
+  "cendekiawan",
+  "cengkih",
+  "cinderamata",
+  "cokelat",
+  "daftar",
+  "derajat",
+  "desain",
+  "detail",
+  "detergen",
+  "diagnosis",
+  "efektif",
+  "efektivitas",
+  "ekosistem",
+  "ekspor",
+  "ekstra",
+  "ekstrem",
+  "elite",
+];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 function App() {
@@ -17,6 +63,12 @@ function App() {
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [showNotification, setShowNotification] = useState(false);
+  Swal.fire({
+    icon: "info",
+    title: "Info",
+    text: "Terdapat 45 kata baku yang diacak",
+    confirmButtonColor: "#2563EB",
+  });
 
   useEffect(() => {
     const handleKeydown = (event) => {
