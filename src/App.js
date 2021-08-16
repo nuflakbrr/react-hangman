@@ -65,7 +65,7 @@ function App() {
   const [showNotification, setShowNotification] = useState(false);
   Swal.fire({
     icon: "info",
-    title: "Info",
+    title: "Informasi",
     text: "Terdapat 45 kata baku yang diacak",
     confirmButtonColor: "#2563EB",
   });
