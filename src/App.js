@@ -6,7 +6,6 @@ import Word from "./components/Word";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
 import { showNotification as show } from "./helpers/Helpers";
-// import Swal from "sweetalert2";
 import "./App.css";
 
 const words = [
@@ -63,12 +62,6 @@ function App() {
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [showNotification, setShowNotification] = useState(false);
-  // Swal.fire({
-  //   icon: "info",
-  //   title: "Informasi",
-  //   text: "Terdapat 45 kata baku yang diacak",
-  //   confirmButtonColor: "#2563EB",
-  // });
 
   useEffect(() => {
     const handleKeydown = (event) => {
