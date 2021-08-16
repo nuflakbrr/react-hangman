@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <h1>Hangman</h1>
+      <h1>React Hangman Games</h1>
       <p>Find the hidden word!</p>
     </>
   );
