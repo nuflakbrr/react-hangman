@@ -6,7 +6,7 @@ import Word from "./components/Word";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
 import { showNotification as show } from "./helpers/Helpers";
-import "./App.css";
+import "./styles/App.css";
 
 const words = [
   "abjad",

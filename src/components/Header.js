@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Header = () => {
   const HandleButton = () => {
     Swal.fire({
-      icon: "info",
+      icon: "warning",
       title: "Peraturan",
       text: "Anda harus menebak kata dengan benar!",
       confirmButtonColor: "#2563EB",
